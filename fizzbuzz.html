@@ -1,39 +1,45 @@
 <!DOCTYPE html>
+
 	<head>
+		
 		<style>
+			
 			body {
 				background: rgb(2,0,36);
 				background: #333;
-				font-size: 32px;
-				color: white;
+				font-size: 16px;
+				color: #fff;
 				font-weight: bold;
-				text-align:center;
+				text-align: center;
 			}
 			
 			#activate {
-				background-color:black;
-				border: 1px solid white;
-				border-radius:5px;
-				padding:15px 40px 15px 40px;
-				margin:15px;
+				background-color: #000;
+				border: 1px solid #fff;
+				border-radius: 5px;
+				padding: 15px 40px 15px 40px;
+				margin: 15px;
 				font-size: 32px;
-				color: white;
+				color: #fff;
 				font-weight: bold;
-				text-align:center;
+				text-align: center;
 			}
 			
 			#container {
-				width:800px;
+				width: 800px;
 				margin: auto auto;
 			}
+			
 			p {
-				height:20px;
-				font-family:sans-serif,arial;
+				height: 20px;
+				font-family: sans-serif,verdana,arial;
 			}
+			
 		</style>
+		
 		<script>
 			function FizzBuzz() {
-			/*
+			
 				for (let FizzBuzzNumber = 0; FizzBuzzNumber < 101; FizzBuzzNumber++) {
 					if(FizzBuzzNumber % 3 === 0  && FizzBuzzNumber % 5 === 0 && FizzBuzzNumber != 0) {
 						var node = document.getElementById('output');
@@ -59,7 +65,7 @@
 						newNode.appendChild(document.createTextNode(FizzBuzzNumber));
 						node.appendChild(newNode);
 					}
-				}*/
+				}
 				
 				for(let i=0;i<101;i++){
 				
@@ -75,18 +81,24 @@
 				}
 			}
 			
-			
-			
-			
 		</script>
+		
 	</head>
+
 	<body>
+		
 		<div id="container">
+			
 			<input id="activate" type="button" onClick="FizzBuzz();" value="Play FizzBuzz" />
+			
 			<div id="output">
+				
 			</div>
+			
 		</div>
+		
 	</body>
+
 </html>
 
 
